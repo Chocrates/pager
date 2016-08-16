@@ -1,5 +1,3 @@
-/** @jsx React.DOM */
-
 /**
  * # Stateless Pager component
  *
@@ -236,7 +234,7 @@ var Page = React.createClass({
 
         return (
             <li key={this.props.key} className={css}>
-                <a onClick={this.props.onClick}>{this.props.children}</a>
+                <a onClick={this.props.onClick} style={{cursor:'pointer'}}>{this.props.children}</a>
             </li>
         );
     }
